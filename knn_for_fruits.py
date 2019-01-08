@@ -6,6 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 # from adspy_shared_utilities import plot_fruit_knn
 
 """
+previous references is : references is : https://github.com/Starignus
 references is : https://github.com/mhsedaghat/knn_to_pycharm_for_quiz_Sedaghat
 
 convert code to pycharm
@@ -16,21 +17,20 @@ convert code to pycharm
 def main():
     fruits = pd.read_table('fruit_data_with_colors.txt')
 
-    X = fruits[['mass', 'width', 'height']] # *** ke mitone 2 class bashad X = fruits[['mass', 'width']] ***
-                                            # amma bayad dar hengam moghayese
-                                            # dar edame kod mad nazar gharar girad
+    X = fruits[['mass', 'width', 'height']]  # *** ke mitone 2 class bashad X = fruits[['mass', 'width']] ***
+    # amma bayad dar hengam moghayese
+    # dar edame kod mad nazar gharar girad
     """    ^
            |
            |
       dar bala tain tedade class haye vorodi va 
-       
+
       dar pain tain tedade class khoroji 
            |
           \/
       """
 
     y = fruits['fruit_label']
-
 
     lookup_fruit_name = dict(zip(fruits.fruit_label.unique(), fruits.fruit_name.unique()))
     print(lookup_fruit_name)
@@ -127,9 +127,9 @@ def main():
 
     # va hala dar pain yek bar digar chek ikonim
 
-    fruit_prediction1 = knn1.predict([[100, 6.3, 8.5]]) # *** agar dar bala 2 class tarif kardim code mishavad ***
-                                                        # fruit_prediction1 = knn1.predict([[100, 6.3]])
-                                                        # inja bayad 2 class bedahim
+    fruit_prediction1 = knn1.predict([[100, 6.3, 8.5]])  # *** agar dar bala 2 class tarif kardim code mishavad ***
+    # fruit_prediction1 = knn1.predict([[100, 6.3]])
+    # inja bayad 2 class bedahim
 
     lookup_fruit_name1 = dict(zip(fruits.fruit_label.unique(), fruits.fruit_name.unique()))
     print("K = 1")
