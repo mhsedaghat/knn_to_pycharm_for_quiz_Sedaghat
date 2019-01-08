@@ -127,7 +127,7 @@ def main():
 
     # va hala dar pain yek bar digar chek ikonim
 
-    fruit_prediction1 = knn1.predict([[100, 6.3, 8.5]]) # *** gara dar bala 2 class tarif kardim code mishavad ***
+    fruit_prediction1 = knn1.predict([[100, 6.3, 8.5]]) # *** agar dar bala 2 class tarif kardim code mishavad ***
                                                         # fruit_prediction1 = knn1.predict([[100, 6.3]])
                                                         # inja bayad 2 class bedahim
 
